@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container container-header">
+      <div class="container container-header-desktop">
         <nav class="container-nav">
           <a href="./index.html" class="logo-first link"
             >Web<span class="logo-second link">Studio</span>
@@ -56,6 +56,23 @@
           </ul>
         </address>
       </div>
+      <div class="header-container-mobile">
+        <a href="./index.html" class="logo-first link"
+          >Web<span class="logo-second link">Studio</span>
+        </a>
+        <button type="button" class="burger-menu js-open-menu">
+          <svg width="40" height="22">
+            <use href="./icons.svg/burger-menu.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <button type="button" class="modal-close js-close-menu">
+          <svg class="modal-icon">
+            <use href="./icons.svg/close.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -66,7 +83,7 @@
           </button>
         </div>
       </section>
-      <section class="main-section">
+      <!--<section class="main-section">
         <div class="container">
           <h2 class="hidden">Internals</h2>
           <ul class="primary-list main-title">
@@ -120,8 +137,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section-actions">
+      </section> /-->
+      <!--<section class="section-actions">
         <div class="container">
           <h2 class="name-list">What are we doing</h2>
           <ul class="primary-list primary-actions">
@@ -144,8 +161,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="our-employees">
+      </section> /-->
+      <!-- <section class="our-employees">
         <div class="container">
           <h2 class="name-list">Our Team</h2>
           <ul class="primary-list team-cont">
@@ -299,8 +316,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="customers">
+      </section> /-->
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="name-list">Customers</h2>
           <ul class="primary-list customers-list">
@@ -348,9 +365,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> /-->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <ul class="footer-list">
           <div class="footer-title">
@@ -409,8 +426,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> /-->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icon">
@@ -496,7 +513,8 @@
           <button type="submit" class="form-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> /-->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
