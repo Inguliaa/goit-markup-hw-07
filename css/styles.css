@@ -295,6 +295,9 @@ img {
 }
 
 .hero {
+  width: 100%;
+  max-width: 428px;
+  max-height: 432px;
   background-color: var(--overlays-shadow-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -369,6 +372,7 @@ img {
 .main-part {
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--overlays-shadow-color);
@@ -587,6 +591,7 @@ img {
 .footer-title {
   max-width: 264px;
 }
+
 .footer-socials {
   gap: 16px;
   justify-content: center;
