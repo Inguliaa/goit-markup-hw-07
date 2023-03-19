@@ -826,7 +826,8 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    justify-content: center;
+    max-width: 552px;
+    padding-left: 0;
   }
 }
 
@@ -863,12 +864,6 @@ img {
 @media screen and (min-width: 758px) {
   .subscribe-container {
     text-align: start;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .subscribe-container {
-    margin-left: -43px;
   }
 }
 
