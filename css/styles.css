@@ -120,6 +120,13 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+ 
+@media (min-width: 320px) and (max-width: 767px) {
+  .container-header-desktop {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
   .primary-nav {
@@ -177,6 +184,7 @@ img {
 }
 .mobile-container {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   padding: 80px 35px 40px 40px;
@@ -199,6 +207,7 @@ img {
   margin-bottom: 40px;
 }
 .contacts-mobile {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -224,7 +233,7 @@ img {
 }
 .socials-mobile {
   gap: 56px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   display: flex;
 }
@@ -310,7 +319,8 @@ img {
 }
 .contacts-add {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   cursor: pointer;
@@ -911,6 +921,11 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   transition: border-color var(--timing-function);
+}
+
+.footer-email:focus {
+  outline: none;
+  border-color: var(--primary-brand);
 }
 
 @media screen and (min-width: 768px) {
