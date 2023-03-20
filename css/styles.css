@@ -198,6 +198,9 @@ img {
   color: var(--overlays-shadow-color);
   margin-bottom: 40px;
 }
+.mobile-link.current {
+  color: var(--pressed-state);
+}
 .mobile-link:focus,
 .mobile-link:hover {
   color: var(--pressed-state);
@@ -213,12 +216,12 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  font-style: normal;
 
   color: var(--primary-brand);
 }
 .mobile-mail {
   font-weight: 500;
+  font-style: normal;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -1011,18 +1014,21 @@ img {
 .container-element {
   padding: 32px 0px;
 }
-
-@media screen and (min-width: 768px) {
   .primary-button .button-element:not(:last-child) {
     margin-right: 24px;
   }
-}
-
 .primary-button {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 72px;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .primary-button {
+    justify-content: center;
+  }
 }
 
 .flex-container {
@@ -1036,7 +1042,6 @@ img {
 @media (min-width: 768px) and (max-width: 1199px) {
   .flex-container {
     row-gap: 72px;
-    flex-direction: column;
   }
 }
 
